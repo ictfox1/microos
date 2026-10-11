@@ -1,0 +1,14 @@
+# Артефакты сборки
+*.bin
+*.o
+*.img
+*.iso
+*.elf
+
+# Временные файлы
+*.swp
+*~
+.DS_Store
+
+# QEMU
+qemu.log
