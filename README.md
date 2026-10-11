@@ -20,6 +20,17 @@
 - `ld` (binutils с `elf_i386`)
 - `qemu-system-i386`
 - `make`
+  
+## Сборка и запуск
+make          # собрать образ build/disk.img
+make run      # запустить в QEMU
+make size     # посмотреть размеры
+make clean    # очистить сборку
+
+## Структура
+src/boot.asm     — загрузчик (org 0x7c00)
+src/kernel.c     — ядро (загружается по адресу 0x1000)
+build/           — артефакты сборки (не коммитятся)
 
 Установка на Debian/Ubuntu:
 
